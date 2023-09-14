@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Popins', sans-serif;
+  transition: all 0.5s ease;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top right, #8a2be2, #d4a5ff) no-repeat center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 60px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card .image {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  border: 3px solid blueviolet;
+  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card h3 {
+  text-align: center;
+}
+.card p {
+  color: orange;
+  text-align: center;
+}
+.swiper-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.swiper {
+  margin: 0 auto;
+  cursor: grab;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 10px #ccc;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.swiper-button-next:hover {
+  transform: scale(1.2) translateX(80%);
+}
+.swiper-button-prev:hover {
+  transform: scale(1.2) translateX(-80%);
+}
+.swiper-button-next {
+  transform: translateX(100%);
+}
+.swiper-button-prev {
+  transform: translateX(-100%);
+}
+.swiper-pagination {
+  transform: translateY(200%);
+}
+.swiper-pagination-bullet {
+  background: #fff;
+  width: 15px;
+  height: 15px;
+}
